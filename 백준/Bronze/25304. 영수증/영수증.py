@@ -3,11 +3,9 @@ n = int(input())
 lst = []
 sum = 0
 
-for _ in range(n):
-    lst.append(list(map(int, input().split())))
-    
 for i in range(n):
-    sum += lst[i][0] * lst[i][1]
+    money, num = map(int, input().split())
+    sum += money * num
 
 if total == sum:
     print("Yes")
