@@ -5,11 +5,7 @@ while True:
     if s == '.':
         break
     str_list.append(s)
-    
-for i in range(1, len(str_list)):
-    if str_list[i - 1].find('.') == -1:
-        str_list[i - 1] = str_list[i - 1] + str_list[i]
-        str_list.pop(i)
+   
 
 for strr in str_list:
     stack = []
